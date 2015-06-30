@@ -1,0 +1,17 @@
+#new-modal-account-article {
+  input[type="text"].error {
+    border: 1px solid #e51c23;
+  }
+
+  .box .row input {
+    width: 170px;
+  }
+
+  .box .row .btn {
+    font-size: inherit;
+    height: auto;
+    padding: 6px 16px;
+    text-align: center;
+    width: 170px;
+  }
+}

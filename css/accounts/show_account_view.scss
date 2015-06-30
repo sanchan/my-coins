@@ -1,0 +1,253 @@
+#show-account {
+  #show-account-header {
+    border-bottom: 1px solid #d0d0d0;
+    padding: 10px;
+
+    .btn {
+      font-size: .9em;
+      height: 28px;
+      padding: 2px 10px;
+    }
+  }
+
+  #show-account-header-btn-group-1 {
+    .popover {
+      min-width: 300px;
+      .arrow {
+        top: -11px !important; /* I don't know why Bootstrap tooltip plugin is overwriting the default -11px. So we have to force it here... */
+      }
+    }
+  }
+
+  #show-account-header-btn-group-2,
+  #show-account-header-btn-group-3 {
+    float: right;
+  }
+
+  #show-account-header-btn-group-2 {
+    margin-right: 20px;
+  }
+
+  #show-account-header-btn-group-3 {
+    box-shadow: inset 0 -1px 0 #dddddd;
+      -webkit-box-shadow: inset 0 -1px 0 #dddddd;
+    background: #fff;
+
+    .fa-search {
+      padding-left: 7px;
+      font-size: 1.1em;
+    }
+
+    .caret {
+      margin-left: 0;
+    }
+  }
+
+  // Content
+  #show-account-content {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  #show-account-transactions-list {
+    .label-list-item {
+      border-bottom: 1px solid #dadada;
+      border-top: 1px solid #fff;
+      font-size: 1.1em;
+      font-weight: bold;
+      padding: 10px;
+      position: relative;
+
+      display:table;
+      table-layout: fixed;
+      width:100%;
+      max-width:100%;
+
+      .label-title-wrapper {
+        background-color: #ccf;
+        border-radius: 2px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+          -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+        display: inline-block;
+        padding: 5px 10px;
+        min-width: 130px;
+      }
+
+      .monthly-balance,
+      .balance {
+        display: inline-block;
+        font-weight: normal;
+        float: right;
+        font-size: .9em;
+        padding: 5px 0;
+        text-align: right;
+
+        &.negative-balance .value {
+          color: #e51c23;
+        }
+
+        .value {
+          min-width: 130px;
+          margin-left: 10px;
+        }
+      }
+
+      .monthly-balance {
+        padding-right: 5px;
+      }
+
+      .balance {
+        content: "| "
+      }
+
+
+      .fa {
+        font-size: 1.3em;
+        margin-right: 10px;
+      }
+    }
+
+    .transaction {
+      border-bottom: 1px solid #dadada;
+      border-top: 1px solid #fff;
+      padding: 10px;
+      position: relative;
+
+      display:table;
+      table-layout: fixed;
+      width:100%;
+      max-width:100%;
+
+      aside {
+        background: #444;
+        bottom: 0;
+        box-sizing: border-box;
+        display: none;
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0;
+      }
+
+      .body {
+        display: block;
+
+      }
+
+      .btn-group {
+        .btn {
+          height: 27px;
+          width: 46px;
+        }
+      }
+
+      .paid,
+      .unpaid {
+        cursor: pointer;
+        float: left;
+        font-size: 1.5em;
+        line-height: 1.2em;
+        margin-right: 10px;
+      }
+
+      .unpaid:before {
+        content: "\f096";
+      }
+
+      .paid:before {
+        content: "\f046";
+
+      }
+
+      .description {
+        float: left;
+      }
+
+      .value {
+        float: right;
+        font-size: 1.4em;
+        line-height: 1.4em;
+      }
+
+      .date {
+        background: #e0e0e0;
+        border: 1px solid #d0d0d0;
+        box-sizing: border-box;
+        float: right;
+        margin-right: 10px;
+        padding: 0 10px;
+
+        .text {
+          margin-left: 5px;
+        }
+      }
+
+      .type {
+        border-right: 8px solid #47a44b;
+        bottom: 0;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      &.expense .type {
+        border-right-color: #e51c23;
+      }
+
+      &.selected {
+        .body {
+          width: calc(100% - 111px);
+        }
+
+        .type {
+          right: 111px;
+        }
+
+        aside {
+          transition: width 1s ease-in-out;
+            -webkit-transition: width 1s ease-in-out;
+            -moz-transition: width 1s ease-in-out;
+            -o-transition: width 1s ease-in-out;
+          display: inline-block;
+          width: 111px;
+        }
+      }
+    }
+  }
+
+
+  // Footer
+  #show-account-footer {
+    border-top: 1px solid #d0d0d0;
+    bottom: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+
+    .btn {
+      font-size: .9em;
+      height: 28px;
+      padding: 2px 10px;
+    }
+  }
+
+  #show-account-footer-balance {
+    border: 1px solid #d0d0d0;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    width: 300px;
+
+    .balance-value {
+      float: right;
+    }
+  }
+
+  #show-account-footer-new-group {
+    float: right;
+  }
+}

@@ -1,0 +1,18 @@
+#new-account-article {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+  #new-account-article .box {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 300px; }
+    #new-account-article .box p {
+      font-size: 1.1em;
+      line-height: 1.5em; }
+
+/*# sourceMappingURL=new_account_view.css.map */

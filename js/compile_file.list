@@ -1,0 +1,2 @@
+boot.coffee sidebar/sidebar_account_view.coffee sidebar/sidebar_show_view.coffee accounts/new_account_view.coffee accounts/new_modal_account_view.coffee accounts/show_account_view.coffee transactions/new_modal_transaction_view.coffee transactions/transaction_view.coffee transactions/new_transaction_modal_view.coffee budgets/new_modal_budget_view.coffee  models/accounts.coffee models/transactions.coffee models/transactions_categories.coffee models/budgets.coffee routers/accounts_router.coffee  routers/transactions_router.coffee mycoins.coffee
+
